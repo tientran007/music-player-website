@@ -16,7 +16,9 @@
      margin-top: 15px;
 
 }
-
+div{
+    /* border: 1px solid black; */
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: linear-gradient(to right top, rgba(0, 64, 116, 0.685), rgb(0, 102, 153))
@@ -26,7 +28,8 @@ body {
     background-color: #2bcbba;
     text-align: center;
     color: #ffffff;
-    margin-top: -20px;
+    /* margin-top: -20px; */
+    margin: 0;
     border-radius: 5px;
 }
 
@@ -34,7 +37,9 @@ body {
     text-align: center;
     font-weight: 600;
 }
-
+h2{
+    margin: 0;
+}
 /* ----------------------------------------Play button--------------------------------- */
 #ereaPlayMusic {
     width: 500px;
@@ -89,7 +94,7 @@ button:active {
 }
 #rangetimesong{
     width: 300px;
-    height: 6px;
+    height: 8px;
 }
 input{
     cursor: pointer;
@@ -98,69 +103,60 @@ input{
 
 #listsong {
     border: black 3px solid;
-    height: 190px;
+    height: 200px;
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 5px;
-    overflow: auto;
+
     width: 660px;
 }
 
-#listsong::-webkit-scrollbar {
-    width: 0px;
-}
 
-.tblistsong {
-    margin-left: -8px;
-    margin-top: 10px;
-    border-spacing: 20px;
+#showallsong{
+    margin-left: 10px;
+    width: 630px;
 }
-
-.tblistsong td {
-    height: 10px;
-    border-radius: 4px;
-}
-
-.tblistsong td:hover {
-    box-shadow: 0px 0px 6px 4px rgb(122, 75, 250);
-    cursor: pointer;
-}
-
-.logosong {
-    border: honeydew 1px solid;
+.showinfosong{
     height: 40px;
-    width: 40px;
-    margin-top: 3px;
-    border-radius: 5px;
+    font-weight: 550;
+    border-bottom: 1px solid gray;
 }
 
-.aboutsong {
-    height: 10px;
-    border: 2px solid gray;
-
+.imgsong{
+    height: 45px;
+    width: 45px;
+    margin: 2px 3px -3px 2px;
+    border-radius: 3px;
 }
-
-.aboutsong :hover {
-    border: aquamarine;
-
+.trinfosong button{
+    margin-left: 25px;
+    font-size: 20px;
 }
-
-.namesong {
+#tbshowallsong{
+overflow: auto;
+height: 160px;
+}
+/*--------------------------------------------------- showindexsong */
+#showindexsong{
+    width: 100px;
+    /* border: 1px black solid;*/
     float: right;
-    margin-left: 3px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: -60px;
 }
+#blockinfosong{
+    /* border: 1px black solid; */
+    display: block;
 
-.infosinger {
-    color: rgb(39, 39, 39);
-    font-size: 13px;
 }
-
+#inerindexsong{
+    color: #ffffff;
+    font-size: 15px;
+}
 /* ---------------------------------------Animation logo  -------------------------------- */
 #songlogo {
     margin-left: 265px;
     border-radius: 50%;
+    margin-top: 10px ;
     /* animation: app-logo-spin infinite 20s linear */
 }
 
@@ -200,14 +196,9 @@ input{
     margin-left: 20px;
     border-radius: 6px;
     text-align: center;
-    overflow: auto;
     overflow-x: hidden;
 }
 
-.playlist::-webkit-scrollbar {
-    width: 5px;
-    background-color: #F5F5F5;
-}
 
 .playlist h4 {
     background-color: yellowgreen;
@@ -260,6 +251,10 @@ input{
     color: rgb(0, 102, 128);
     font-size: 15px;
     margin-left: 50px;
+}
+#listplaysong{
+    height: 444px;
+    overflow: auto;
 }
 /* ---------------------------------------Icon style----------------------------------------------- */
 .style-icon {
@@ -315,4 +310,10 @@ h3{
     margin-left: 15px;
     color: #F5F5F5;
     box-shadow: 0px 0px 6px 1px rgb(44, 44, 44);
+}
+#inputnamesong{
+    width: 200px;
+    border-radius: 4px;
+    height: 23px;
+    margin: 5px 0px 0px 35px;
 }
