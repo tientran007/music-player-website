@@ -169,7 +169,21 @@ height: 160px;
         transform: rotate(360deg)
     }
 }
-
+#speedaudio{
+    height: 110px;
+    width: 65px;
+    border: 1px solid rgb(134, 134, 134);
+    float: right;
+    margin-right: 30px;
+    margin-top: 50px;
+    border-radius: 3px;
+}
+#speedaudio button{
+   width: 50px;
+   height: 20px;
+   border-radius: 2px;
+   margin-left: 4px;
+}
 /* -------------------------------------Text Creepin---------------------------------- */
 .marquee {
     width: 380px;
@@ -207,7 +221,16 @@ height: 160px;
     font-size: 20px;
 
 }
-
+.playlist h4>img{
+    height: 20px;
+    width: 20px;
+    margin-bottom: -3px;
+    filter: contrast(20%);
+    cursor: pointer;
+}
+ .replaylistbtn{
+    filter: contrast(100%) !important;
+ }
 .namesongplaylist {
     width: 180px;
     height: 20px;
@@ -250,7 +273,8 @@ height: 160px;
 #quantitysong{
     color: rgb(0, 102, 128);
     font-size: 15px;
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 #listplaysong{
     height: 444px;

@@ -38,6 +38,30 @@
             </div>
             <div>
                 <img id="songlogo" src="images/icon/musicdics.png" alt="bacphanmusic" width="170px" height="170px">
+                <div id="speedaudio">
+                <table>
+                    <tr>
+                        <td>
+                            <button class="disable-btn" onclick="speed075()">0.75X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="speed100()">1X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="disable-btn" onclick="speed150()">1.5X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="disable-btn" onclick="speed200()">2X</button>
+                        </td>
+                    </tr>
+                </table>
+                </div>
             </div>
             <div id="areavolume">
                 <img title="Change Volume" id="iconvolume" src="images/icon/speaker.png" class="style-icon"
@@ -79,7 +103,7 @@
             </div>
         </div>
         <div class="playlist" >
-            <h4>Play List <span id="quantitysong"></span></h4>
+            <h4>Play List  <span id="quantitysong"></span> <img id="replayplaylistbtn" onclick="rePlaylist()" src="images/icon/repeat.png" title="Replay Playlist" ></h4>
             <div id="listplaysong">
             </div>
         </div>
